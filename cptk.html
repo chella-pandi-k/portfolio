@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chella Pandi Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="cptk.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><span>Chella Pandi K</span></div>
+            <div class="links">
+                <a href="#" data-section="home-section">Home</a>
+                <a href="#" data-section="about-section">About</a>
+                <a href="#" data-section="skills-section">Skills</a>
+                <a href="#" data-section="resume-section">Resume</a>
+                <a href="#" class="contact-btn">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#" data-section="home-section">Home</a>
+                <a href="#" data-section="about-section">About</a>
+                <a href="#" data-section="skills-section">Skills</a>
+                <a href="#" data-section="resume-section">Resume</a>
+                <a href="#" class="contact-btn">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="main-bg" id="home-section">
+        <div class="main-container">
+            <div class="image"><img src="cpedited.jpg" alt="users image" style="width: 400px;height: 400px; margin-left: 300px; margin-top: 5px;"></div>
+            <div class="content">
+                <h1>Hey I'm <span>Chella Pandi</span></h1>
+                <div class="typewriter">I'm a <span></span></div>
+                <p>As an ECE engineer i have very much interested in web
+                development.well learning and developing my knowledge 
+                is my own key aspect</p>
+                <div class="social-links">
+                    <a href="https://github.com/chella-pandi-k" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href=" http://www.linkedin.com/in/chella
+pandi-k-65a672295" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+    <section class="main-bg" id="about-section" style="margin-left: 40px;margin-top: 40px; display:none;">
+        <div class="container">
+            <h2>About Me</h2><br>
+            <p> Motivated and detail-oriented Electronics and
+ Communication Engineering graduate. Eager to apply
+ technical knowledge and problem-solving skills in a dynamic
+ environment and add significant value to the organization's
+ success. Enthusiastic about learning and committed to
+ delivering exceptional results in a collaborative and
+ innovative environment.</p style="margin-top: 20px;">
+ <br><br>
+            <p><h2>Education:</h2> Bachelor of Technology in Electronics and
+            <p>Interests: Web Development, Software Engineering,
+            Electronics Design, Open Source Contributions.</p>
+        </div>
+    </section>
+    <section class="main-bg" id="skills-section" style="margin-left: 20px;">
+        <div class="container">
+            <h2 style="margin-bottom:20px;">Technical Skills</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+                <div style="flex:1; min-width:200px;">
+                    <h3 style="color:#00c3ff;">Programming Languages</h3>
+                    <ul style="list-style:square; color:#000000; margin-left:20px;">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div style="flex:1; min-width:200px;">
+                    <h3 style="color:#12f3d5;">Web Technologies</h3>
+                    <ul style="list-style:square; color:#000000; margin-left:20px;">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div style="flex:1; min-width:200px;">
+                    <h3 style="color:#03b2cd;">Tools & Platforms</h3>
+                    <ul style="list-style:square; color:#000000; margin-left:20px;">
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-bg" id="resume-section" style="display:none;">
+        <div class="container" style="max-width:600px;margin:auto;padding:40px 20px;text-align:center;">
+            <h2 style="margin-bottom:20px;">My Resume</h2>
+            <p style="font-size:1.1em;color:#000000;margin-bottom:30px;">
+                Download my professional resume to learn more about my experience, education, and skills.
+            </p>
+            <a href="Black & White Simple Profile Resume (8).pdf" download class="resume-download-btn">
+                <i class="fa fa-download"></i> Download Resume (PDF)
+            </a>
+            <div style="margin-top:40px;text-align:left;">
+                <h3 style="color:rgb(39, 198, 193);">Summary</h3>
+                <p style="color:#000000;">I am an ECE enginee and also an AI based software as well as AI integrated program developer</p>
+               <br> <h3 style="color:rgb(39, 198, 193);">Experience</h3><br>
+                <ul style="color:#000000;">
+                    <li>AI based insect wing anaysis project</li>
+                    <li>AI basd cricket analysis corse completion</li>
+                </ul>
+                <br>
+                <h3 style="color:rgb(39, 198, 193);;">Education</h3>
+                <ul style="color:#000000;">
+                    <li>Be ECE, Velammal college of engineering and technology</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="main-bg" id="contact-section" style="display:none;">
+        <div class="container">
+            <h2 style="text-align:center;margin-bottom:24px;">Contact</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name"><i class="fa fa-user"></i> Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="mobile"><i class="fa fa-phone"></i> Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" required placeholder="123-456-7890">
+                </div>
+                <button type="submit" class="contact-btn-submit"><i class="fa fa-paper-plane"></i> Submit</button>
+            </form>
+            <div id="contact-success" style="display:none;color:lime;margin-top:20px;text-align:center;font-size:1.2em;">
+                Thank you for contacting us!
+            </div>
+        </div>
+    </section>
+    <footer style="background:#181818; color:#aaa; text-align:center; padding:18px 0; font-size:1em; letter-spacing:1px;">
+        &copy; 2025 Chella Pandi K. All rights reserved.
+    </footer>
+    <style>
+    .resume-download-btn {
+        display: inline-block;
+        background: linear-gradient(90deg,#00c3ff,#3a7bd5);
+        color: #fff;
+        padding: 14px 32px;
+        border-radius: 8px;
+        font-size: 1.1em;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0,195,255,0.15);
+        transition: background 0.2s, transform 0.2s;
+        margin-bottom: 20px;
+    }
+    .resume-download-btn:hover {
+        background: linear-gradient(90deg,#3a7bd5,#00c3ff);
+        transform: translateY(-2px) scale(1.03);
+        color: #fff;
+    }
+    .contact-form {
+        background: rgba(30,30,40,0.95);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+        padding: 32px 24px;
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .contact-form .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .contact-form label {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+    .contact-form input {
+        padding: 10px 12px;
+        border: none;
+        border-radius: 6px;
+        background: #23232b;
+        color: #fff;
+        font-size: 1em;
+        outline: none;
+        transition: box-shadow 0.2s;
+    }
+    .contact-form input:focus {
+        box-shadow: 0 0 0 2px #00c3ff;
+    }
+    .contact-btn-submit {
+        background: linear-gradient(90deg,#00c3ff,#3a7bd5);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.2s, transform 0.2s;
+        box-shadow: 0 2px 8px rgba(0,195,255,0.15);
+    }
+    .contact-btn-submit:hover {
+        background: linear-gradient(90deg,#3a7bd5,#00c3ff);
+        transform: translateY(-2px) scale(1.03);
+    }
+    </style>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = [
+                "home-section", "about-section", "skills-section",
+                "resume-section", "contact-section"
+            ];
+            document.querySelectorAll('a[data-section], .contact-btn').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    let sectionId = this.getAttribute('data-section') || "contact-section";
+                    sections.forEach(id => {
+                        const el = document.getElementById(id);
+                        if (el) el.style.display = 'none';
+                    });
+                    const showEl = document.getElementById(sectionId);
+                    if (showEl) showEl.style.display = 'block';
+                    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+                });
+            });
+
+            // Contact form handler
+            const form = document.getElementById('contact-form');
+            if(form){
+                form.addEventListener('submit', function(e){
+                    e.preventDefault();
+                    form.style.display = 'none';
+                    document.getElementById('contact-success').style.display = 'block';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
